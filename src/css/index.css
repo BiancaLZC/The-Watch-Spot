@@ -1,4 +1,5 @@
 @import './_common';
-@import './_example';
 @import './variables.css';
-@import './about.css'
+@import './about.css';
+@import './header.css';
+@import './footer.css';
