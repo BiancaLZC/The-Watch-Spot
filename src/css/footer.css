@@ -1,4 +1,6 @@
 /*Footer style*/
+@import url(https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900&display=swap);
+
 .footer-section {
   background-color: var(--dark-green-color);
   margin: 0 auto;
