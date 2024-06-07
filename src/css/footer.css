@@ -51,17 +51,17 @@
 .footer-icons {
   display: flex;
   margin-top: -60px;
-  gap: 16px;
-  border-radius: solid 4px var(--white-color);
+  gap: 15px;
 }
 .footer-icons svg {
   width: 44px;
+  gap: 16px;
+  border-radius: solid 4px var(--white-color);
 }
 .footer-icon {
   display: flex;
   margin-top: -60px;
   gap: 16px;
-  border-radius: solid 4px var(--white-color);
 }
 .footer-icon svg {
   width: 44px;
