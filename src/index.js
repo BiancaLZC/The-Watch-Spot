@@ -23,55 +23,58 @@
 
   toggleMenu(true);
 })();
-//watch slider
+// watch slider
 const watchSlider = document.querySelector('.watch-slider');
 const watchImages = document.querySelectorAll('.watch-slider img');
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
+const currentSlide = document.getElementById('currentSlide');
 
-let counter = 1;
+let counter = 0;
+const totalSlides = watchImages.length;
 const size = watchImages[0].clientWidth;
 const slideWidth = size;
+const slideSize = 428;
 const intervalTime = 5000;
 let autoSlide = false;
 
 const slideNext = () => {
-  if (counter >= watchImages.length - 1) {
-    counter = 1;
-    watchSlider.style.transition = 'none';
-    watchSlider.style.transform = 'translateX(' + -slideWidth * counter + 'px)';
-    return;
-  }
   counter++;
-  watchSlider.style.transition = 'transform 0.4s ease-in-out';
-  watchSlider.style.transform = 'translateX(' + -slideWidth * counter + 'px)';
+  if (counter >= totalSlides) {
+    counter = 0;
+  }
+  updateSlider();
 };
 
 const slidePrev = () => {
-  if (counter <= 0) return;
   counter--;
-  watchSlider.style.transition = 'transform 0.4s ease-in-out';
-  watchSlider.style.transform = 'translateX(' + -slideWidth * counter + 'px)';
+  if (counter < 0) {
+    counter = totalSlides - 1;
+  }
+  updateSlider();
 };
 
-watchSlider.addEventListener('transitionend', () => {
-  if (watchImages[counter].id === 'lastClone') {
-    watchSlider.style.transition = 'none';
-    counter = watchImages.length - 2;
-    watchSlider.style.transform = 'translateX(' + -slideWidth * counter + 'px)';
-  }
-  if (watchImages[counter].id === 'firstClone') {
-    watchSlider.style.transition = 'none';
-    counter = watchImages.length - counter;
-    watchSlider.style.transform = 'translateX(' + -slideWidth * counter + 'px)';
-  }
-});
+const updateSlider = () => {
+  watchSlider.style.transition = 'transform 0.4s ease-in-out';
+  watchSlider.style.transform = 'translateX(' + -size * counter + 'px)';
+  currentSlide.textContent = (counter + 1).toString().padStart(2, '0');
+};
 
-nextBtn.addEventListener('click', () => {
-  autoSlide = false;
-  slideNext();
-});
 prevBtn.addEventListener('click', () => {
   autoSlide = false;
   slidePrev();
 });
+nextBtn.addEventListener('click', () => {
+  autoSlide = false;
+  slideNext();
+});
+
+watchSlider.addEventListener('transitionend', () => {
+  if (counter === totalSlides) {
+    watchSlider.style.transition = 'none';
+    counter = 0;
+    watchSlider.style.transform = 'translateX(0)';
+  }
+});
+
+updateSlider();
