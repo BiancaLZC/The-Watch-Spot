@@ -1,4 +1,4 @@
-/* sale section */
+/*sale section */
 .sale-section {
   padding: 80px 0;
 }
@@ -161,8 +161,8 @@
   }
   .about-sale {
     justify-content: center;
-    padding-left: 30px;
     flex-direction: column;
-    margin-left: 20px;
+    padding-left: 0;
+    margin-left: 0;
   }
 }

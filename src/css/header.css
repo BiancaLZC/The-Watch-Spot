@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900&display=swap');
 .wrapper {
   max-width: 1440px;
   background-color: var(--black-color);
@@ -5,8 +6,7 @@
 }
 .container {
   margin: 0 auto;
-  width: 1280px;
-  max-width: 100%;
+  max-width: 1280px;
 }
 /* hero section */
 .header-section .container {
@@ -14,12 +14,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.mobile-navigation {
-  display: none;
-}
-.js-menu-container {
-  display: none;
-}
+
 .section {
   padding: 80px 0;
 }
@@ -58,6 +53,10 @@
   text-align: center;
   color: var(--white-color);
   text-decoration: none;
+}
+.js-menu-container,
+.mobile-navigation {
+  display: none;
 }
 /* hero section */
 .hero-content {
@@ -152,6 +151,15 @@
   .header-section {
     display: none;
   }
+
+  .watch-container {
+    overflow: hidden;
+  }
+  .moobile-navigation .mobile-container {
+    max-width: 738px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
   .js-menu-container {
     position: fixed;
     top: 0px;
@@ -173,11 +181,15 @@
   .is-open {
     display: none;
   }
-
+  .mobile-navigation.container {
+    max-width: 738px;
+  }
   .mobile-menu-btn {
     background-color: var(--black-color);
     border: none;
     margin-top: -10px;
+    padding: 10px;
+    flex: 0 0 auto;
   }
   .mobile-navigation {
     display: flex;
@@ -186,15 +198,18 @@
   }
   .nav-bar__mobile {
     display: flex;
-
     justify-content: space-between;
     margin-bottom: 50px;
   }
   .mobile-nav {
     display: flex;
+    width: 100%;
     justify-content: space-between;
+    align-items: center;
   }
-
+  .mobile-logo__item {
+    flex: 0 0 auto;
+  }
   .nav-list {
     list-style: none;
     display: flex;
@@ -218,7 +233,6 @@
 
   .button-close-nav {
     width: 20px;
-
     border: none;
     background-color: var(--dark-green-color);
     color: var(--white-color);
@@ -228,6 +242,7 @@
   }
   .watch-slider img {
     width: 100%;
+    height: auto;
   }
   .hero-content {
     flex-direction: column;
@@ -285,6 +300,10 @@
   .hero-contend__text {
     display: none;
   }
+  .watch-container {
+    overflow: hidden;
+  }
+
   .hero-p {
     display: block;
     font-family: var(--font-epilogue);
