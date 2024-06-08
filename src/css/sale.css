@@ -1,6 +1,6 @@
-/* sale section */
+/*sale section */
 .sale-section {
-  padding: 80px 0;
+padding-bottom: 80px;
 }
 .sale-text h3 {
   font-family: Epilogue;
@@ -31,7 +31,7 @@
   flex-direction: column;
   margin-top: 0;
   list-style: none;
-  gap: 5px;
+  gap: 7px;
 }
 .about-sale__texts {
   margin-left: 40px;
@@ -161,8 +161,8 @@
   }
   .about-sale {
     justify-content: center;
-    padding-left: 30px;
     flex-direction: column;
-    margin-left: 20px;
+    padding-left: 0;
+    margin-left: 0;
   }
 }

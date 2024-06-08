@@ -2,7 +2,7 @@
   "name": "The-Watch-Spot",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/BiancaLZC/The-Watch-Spot",
+  "homepage": "https://biancalzc.github.io/The-Watch-Spot/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /The-Watch-Spot/"

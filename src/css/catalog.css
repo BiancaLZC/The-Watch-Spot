@@ -89,8 +89,8 @@
   background-color: var(--dark-green-color);
   transition-duration: 500ms;
   /*display: flex;
-  flex-direction: column; */
-  border-radius: 8px;
+  flex-direction: column; 
+  border-radius: 8px;*/
 }
 .row_row:hover .overlay {
   transform: translateY(0);
