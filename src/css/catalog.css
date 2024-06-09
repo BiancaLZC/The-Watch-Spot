@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900&display=swap');
 .catalog-section {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
-  max-width: 100%;
+
   padding: 80px 0;
 }
 .catalog_1 {
-  width: 1200px;
-  max-width: 100%;
+  max-width: 1200px;
+
   margin: 0 auto;
 }
 .common-title {
@@ -282,6 +282,7 @@
 
   [data-modal-content] {
     max-width: 100%;
+    height: 900px;
   }
   .modal-img {
     position: relative;
@@ -292,6 +293,7 @@
   .modal-form {
     max-width: 100%;
     position: absolute;
+
     left: 20px;
     top: 130px;
   }
@@ -310,8 +312,8 @@
   }
   .modal-form__btn {
     width: 295px;
-    left: -420px;
-    top: 380px;
+    left: -360px;
+    top: 400px;
   }
   .modal-form__input {
     width: 290px;
@@ -322,7 +324,7 @@
   .modal-form__btntext {
     right: 0px;
     padding: 30px 20px;
-    top: 85px;
+    top: 115px;
     width: 350px;
   }
   .watch_price {
