@@ -143,10 +143,9 @@
   transition-duration: 1s;
 }
 [data-modal] {
-  height: 100%;
   width: 100%;
   position: fixed;
-  top: 0;
+  top: 450px;
   left: 0;
 }
 [data-modal-close] {
@@ -164,7 +163,8 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 400px;
+  position: fixed;
+  top: 430px;
 }
 .modal-form__position {
   display: flex;
@@ -178,6 +178,7 @@
   top: -350px;
   right: -350px;
   font-family: var(--font-epilogue);
+  width: 400px;
 }
 .modal-form__input {
   outline: none;
@@ -218,8 +219,8 @@
   text-align: center;
   margin: 0 auto;
   position: absolute;
-  right: 55px;
-  top: 510px;
+  right: -350px;
+  top: 80px;
 }
 .modal-form__btntext {
   font-family: var(--font-epilogue);
@@ -228,9 +229,21 @@
   line-height: 14px;
   letter-spacing: -0.02em;
   position: relative;
-  top: -290px;
+  top: -310px;
   right: -350px;
 }
+.details_watch-modal {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: var(--font-epilogue);
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: var(--black-color);
+  text-align: center;
+}
+
 /* Media query phone */
 @media screen and (max-width: 767px) {
   .catalog-section {
@@ -269,25 +282,27 @@
 
   [data-modal-content] {
     max-width: 100%;
-    height: 100%;
   }
   .modal-img {
-    padding-top: 10px;
+    position: relative;
+    width: 200px;
+    top: -50px;
+    right: -90px;
   }
   .modal-form {
     max-width: 100%;
     position: absolute;
-    left: -5px;
-    top: 270px;
+    left: 20px;
+    top: 130px;
   }
   [data-modal-close] {
     top: 10px;
   }
   .modal-form__position {
-    max-width: 100%;
     position: relative;
     left: 20px;
     top: 80px;
+    font-size: 10px;
   }
   .modal-form__comments {
     height: 70px;
@@ -295,18 +310,23 @@
   }
   .modal-form__btn {
     width: 295px;
-    max-width: 100%;
-    left: 20px;
-    top: 430px;
+    left: -420px;
+    top: 380px;
   }
   .modal-form__input {
     width: 290px;
+    font-size: 10px;
+    margin: 0;
   }
 
   .modal-form__btntext {
     right: 0px;
     padding: 30px 20px;
-    top: 105px;
+    top: 85px;
+    width: 350px;
+  }
+  .watch_price {
+    text-align: left;
   }
 }
 /* Media query tablet */
@@ -357,8 +377,8 @@
   .modal-form__btn {
     width: 350px;
     max-width: 100%;
-    left: 370px;
-    top: 450px;
+    left: 40px;
+    top: 20px;
   }
   .modal-form__btntext {
     left: 350px;
