@@ -334,21 +334,29 @@
     width: 744px;
     max-width: 100%;
   }
+  [data-modal-close] {
+    top: 50px;
+  }
   .modal-form {
     width: 664px;
     max-width: 100%;
   }
-  .modal-form__position {
-    left: 330px;
-    max-width: 100%;
+  .modal-form__comments {
+    height: 100px;
+    width: 350px;
+  }
+  .modal-form__input {
+    width: 350px;
   }
   .modal-form__btn {
-    width: 368px;
+    width: 350px;
     max-width: 100%;
+    left: 370px;
+    top: 450px;
   }
   .modal-form__btntext {
-    left: 330px;
+    left: 350px;
     max-width: 100%;
-    width: 368px;
+    width: 350px;
   }
 }
