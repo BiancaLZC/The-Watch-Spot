@@ -174,12 +174,10 @@ gap: 40px;
     width: 100%;
   }
 .sale-section .container{
-  flex-direction: row;
+
   gap: 40px;
 }
-.about-sale__texts{
-  max-width: 572px;
-}
+
 .sale-text{
   margin-top: -55px;
 }
