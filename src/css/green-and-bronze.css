@@ -117,7 +117,7 @@
 
   .new-watches-photos img {
     display: block;
-    max-width: 350px;
+  width: 100%;
     height: auto;
   }
 }
