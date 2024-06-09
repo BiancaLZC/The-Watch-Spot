@@ -1,21 +1,21 @@
 {
-  "name": "parcel-project-template",
+  "name": "The-Watch-Spot",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://biancalzc.github.io/The-Watch-Spot/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /The-Watch-Spot/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/BiancaLZC/The-Watch-Spot.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Vadanuta Bianca <vadanuta.bianca@yahoo.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/BiancaLZC/The-Watch-Spot/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
@@ -26,5 +26,5 @@
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "browserslist": ">0.5%, last 2 versions, not dead"
 }
