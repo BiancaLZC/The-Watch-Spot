@@ -1,7 +1,7 @@
 {
   "name": "the watch spot",
   "version": "2.0.0",
-  "description": "",
+  "description": "Watch colection description",
   "homepage": "https://biancalzc.github.io/The-Watch-Spot/",
   "scripts": {
     "start": "parcel src/*.html",
