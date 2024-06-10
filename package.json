@@ -1,7 +1,7 @@
 {
   "name": "the-watch-spot",
   "version": "2.0.0",
-  "description": "",
+  "description": "Watch colection description",
   "homepage": "https://biancalzc.github.io/The-Watch-Spot/",
   "scripts": {
     "start": "parcel src/*.html",
@@ -26,5 +26,5 @@
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "browserslist": ">0.5%, last 2 versions, not dead"
 }
